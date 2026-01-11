@@ -1,0 +1,44 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== Virtual environments =====
+.venv/
+venv/
+ENV/
+.env
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Build / packaging =====
+dist/
+build/
+*.egg-info/
+
+# ===== Course outputs =====
+# Notebooks may save figures or temporary files here.
+# We keep an empty placeholder file so the folders exist after cloning.
+pictures/*
+!pictures/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
+!outputs/figures/.gitkeep
+
+# ===== Data =====
+# Some notebooks download datasets. Put them under ./data.
+# Keep the folder tracked but ignore large files.
+data/*
+!data/.gitkeep
+
+# ===== Project-specific =====
+.history/
+GTSRB/

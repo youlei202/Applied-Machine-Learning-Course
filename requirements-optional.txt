@@ -1,0 +1,11 @@
+# Optional dependencies used in a few advanced notebooks.
+# Install only if you need those specific sessions.
+
+# Explainability
+shap
+
+# Counterfactual explanations
+dice-ml
+
+# Generative models (bonus session)
+tensorflow

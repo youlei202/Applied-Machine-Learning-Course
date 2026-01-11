@@ -1,0 +1,22 @@
+# Core dependencies used in most notebooks
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+requests
+
+# Notebooks / interactive
+jupyterlab
+ipykernel
+
+# Visualization helpers
+seaborn
+networkx
+
+# Deep learning (used in Lecture 7)
+torch
+torchvision
+
+# Progress bars (optional but nice)
+tqdm
