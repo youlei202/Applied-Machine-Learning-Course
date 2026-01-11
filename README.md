@@ -17,7 +17,7 @@
   <b>Slides</b> live on DTU Learn • <b>Notebooks</b> live in this repo • <b>Code</b> drives the logic
 </p>
 
-</div>>
+</div>
 
 ---
 
