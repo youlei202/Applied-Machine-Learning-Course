@@ -1,16 +1,23 @@
 # Applied Machine Learning
 ### 🎓 Technical University of Denmark
 
+<div align="center">
+
+<img src="https://unepccc.org/wp-content/uploads/2021/05/dtu-logo.png" alt="DTU Logo" width="120"/>
+
+# Applied Machine Learning
+### 🎓 DTU Engineering Technology
+
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![DTU](https://img.shields.io/badge/DTU-Compute-990000?style=for-the-badge)](https://www.dtu.dk/)
+[![DTU EngTech](https://img.shields.io/badge/DTU-Engineering_Technology-F2D04B?style=for-the-badge&labelColor=F2D04B&color=F2D04B)](https://www.engtech.dtu.dk/)
 
 <p align="center">
   <b>Slides</b> live on DTU Learn • <b>Notebooks</b> live in this repo • <b>Code</b> drives the logic
 </p>
 
-</div>
+</div>>
 
 ---
 
