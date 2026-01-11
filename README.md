@@ -1,6 +1,3 @@
-# Applied Machine Learning
-### 🎓 Technical University of Denmark
-
 <div align="center">
 
 <img src="https://unepccc.org/wp-content/uploads/2021/05/dtu-logo.png" alt="DTU Logo" width="120"/>
