@@ -1,96 +1,136 @@
-# Applied Machine Learning — Course Repository
+# Applied Machine Learning
+### 🎓 Technical University of Denmark
 
-This repository contains the **slides**, **Jupyter notebooks**, and a small amount of **supporting code** for an Applied Machine Learning course.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![DTU](https://img.shields.io/badge/DTU-Compute-990000?style=for-the-badge)](https://www.dtu.dk/)
 
-- Slides live under DTU Learn.
-- Notebooks live under [`notebooks/`](notebooks/).
-- Small helper utilities live under [`src/aml_course/`](src/aml_course/).
+<p align="center">
+  <b>Slides</b> live on DTU Learn • <b>Notebooks</b> live in this repo • <b>Code</b> drives the logic
+</p>
 
-The material is organized so that each lecture has a corresponding notebook (with a few optional prerequisite notebooks and one bonus session).
+</div>
 
-## Repository structure
+---
 
-```
+## 📖 Overview
+
+Welcome to the **Applied Machine Learning** course repository. This collection is designed to provide a hands-on approach to modern ML techniques.
+
+The material is structured so that each lecture topic corresponds to a specific Jupyter notebook, guiding you from raw data to model evaluation.
+
+### 📂 Repository Structure
+
+```text
 .
-├── notebooks/       # Lecture notebooks (Jupyter)
-├── src/aml_course/  # Helper utilities imported by notebooks
-├── scripts/         # Standalone scripts (e.g., training)
-├── models/          # Small pretrained artifacts
-├── data/            # Datasets (downloaded or placed manually)
-├── pictures/        # Figures saved by notebooks
-└── docs/            # Extra course material / notes
+├── 📓 notebooks/       # Interactive Lecture notebooks
+├── 🛠 src/aml_course/  # Helper utilities & source code
+├── 🚀 scripts/         # Standalone training/utility scripts
+├── 🧠 models/          # Pretrained artifacts & weights
+├── 💾 data/            # Datasets (auto-downloaded or manual)
+├── 🖼 pictures/        # Generated figures & assets
+└── 📝 docs/            # Extra notes & documentation
+
 ```
 
-## Getting started
+---
 
-### 1) Create an environment
+## ⚡ Getting Started
 
-You can use **pip** or **conda**.
+### 1️⃣ Create an Environment
 
-**Option A — pip**
+Choose your preferred package manager to set up the environment.
+
+<details open>
+<summary><b>Option A: pip (Recommended for simplicity)</b></summary>
 
 ```bash
+# Create virtual environment
 python -m venv .venv
-# macOS / Linux
+
+# Activate it
+# macOS / Linux:
 source .venv/bin/activate
-# Windows
+# Windows:
 # .venv\Scripts\activate
 
+# Install dependencies
 pip install -r requirements.txt
+
 ```
 
-**Option B — conda**
+</details>
+
+<details>
+<summary><b>Option B: conda</b></summary>
 
 ```bash
 conda env create -f environment.yml
 conda activate aml-course
+
 ```
 
-Optional dependencies (used in some advanced sessions):
+</details>
 
-```bash
-pip install -r requirements-optional.txt
-```
+> **💡 Note for Power Users:**
+> For advanced sessions requiring specific GPU support, install the optional dependencies:
+> `pip install -r requirements-optional.txt`
 
-> Notes
-> - Installing **PyTorch** and/or **TensorFlow** can be platform-specific. If you run into issues, follow the official installation instructions for your OS/GPU.
+### 2️⃣ Launch Jupyter
 
-### 2) Launch Jupyter
+Start the lab server:
 
 ```bash
 jupyter lab
+
 ```
 
-Open notebooks from the `notebooks/` folder.
+Navigate to the `notebooks/` folder to begin. Each notebook contains a **Setup cell** that automatically configures paths (`DATA_DIR`, `FIGURES_DIR`, etc.) relative to the repository root.
 
-Each notebook starts with a **Setup** cell that:
-- finds the repository root,
-- changes the working directory to the root (so relative paths work consistently), and
-- defines common paths: `DATA_DIR`, `FIGURES_DIR`, `MODELS_DIR`.
+---
 
-## Lecture map
+## 🗓️ Lecture Map
 
-| Lecture | Topic | Slides | Notebook |
-|---:|---|---|---|
-| Prerequisite A | Python + NumPy Crash Course | — | [`00_python_numpy_crash_course.ipynb`](notebooks/00_prerequisites/00_python_numpy_crash_course.ipynb) |
-| Prerequisite B | Pandas Essentials | — | [`01_pandas_intro.ipynb`](notebooks/00_prerequisites/01_pandas_intro.ipynb) |
-| 01 | Introduction | [`01_Introduction.pdf`] | [`01_introduction.ipynb`](notebooks/01_introduction.ipynb) |
-| 02 | ML Foundations | [`02_ML_Foundations.pdf`] | [`02_ml_foundations.ipynb`](notebooks/02_ml_foundations.ipynb) |
-| 03 | Regression | [`03_Regression.pdf`] | [`03_regression.ipynb`](notebooks/03_regression.ipynb) |
-| 04 | Classification | [`04_Classification.pdf`] | [`04_classification.ipynb`](notebooks/04_classification.ipynb) |
-| 05 | Clustering | [`05_Clustering.pdf`] | [`05_clustering.ipynb`](notebooks/05_clustering.ipynb) |
-| 06 | Neural Networks | [`06_Neural_Networks.pdf`] | [`06_neural_networks.ipynb`](notebooks/06_neural_networks.ipynb) |
-| 07 | CNNs (PyTorch) | [`07_CNN.pdf`] | [`07_cnn.ipynb`](notebooks/07_cnn.ipynb) |
-| 08 | Resampling | [`08_Resampling.pdf`] | [`08_resampling.ipynb`](notebooks/08_resampling.ipynb) |
-| 09 | SVM | [`09_SVM.pdf`] | [`09_svm.ipynb`](notebooks/09_svm.ipynb) |
-| 10 | Trees & Ensembles | [`10_Trees_and_Ensembles.pdf`] | [`10_trees_ensembles.ipynb`](notebooks/10_trees_ensembles.ipynb) |
-| 11 | XAI & Experimentation | [`11_XAI_and_Experimentation.pdf`] | [`11_xai_experimentation.ipynb`](notebooks/11_xai_experimentation.ipynb) |
-| Bonus | Generative models (VAE) | — | [`12_bonus_generative_models_vae.ipynb`](notebooks/12_bonus_generative_models_vae.ipynb) |
+| # | Topic | 📑 Slides | 💻 Notebook |
+| --- | --- | --- | --- |
+| **Pre A** | 🐍 Python + NumPy Crash Course | — | [`00_python_numpy_crash_course.ipynb`](https://www.google.com/search?q=notebooks/00_prerequisites/00_python_numpy_crash_course.ipynb) |
+| **Pre B** | 🐼 Pandas Essentials | — | [`01_pandas_intro.ipynb`](https://www.google.com/search?q=notebooks/00_prerequisites/01_pandas_intro.ipynb) |
+| **01** | **Introduction** | [PDF] | [`01_introduction.ipynb`](https://www.google.com/search?q=notebooks/01_introduction.ipynb) |
+| **02** | **ML Foundations** | [PDF] | [`02_ml_foundations.ipynb`](https://www.google.com/search?q=notebooks/02_ml_foundations.ipynb) |
+| **03** | **Regression** | [PDF] | [`03_regression.ipynb`](https://www.google.com/search?q=notebooks/03_regression.ipynb) |
+| **04** | **Classification** | [PDF] | [`04_classification.ipynb`](https://www.google.com/search?q=notebooks/04_classification.ipynb) |
+| **05** | **Clustering** | [PDF] | [`05_clustering.ipynb`](https://www.google.com/search?q=notebooks/05_clustering.ipynb) |
+| **06** | **Neural Networks** | [PDF] | [`06_neural_networks.ipynb`](https://www.google.com/search?q=notebooks/06_neural_networks.ipynb) |
+| **07** | **CNNs (PyTorch)** | [PDF] | [`07_cnn.ipynb`](https://www.google.com/search?q=notebooks/07_cnn.ipynb) |
+| **08** | **Resampling** | [PDF] | [`08_resampling.ipynb`](https://www.google.com/search?q=notebooks/08_resampling.ipynb) |
+| **09** | **SVM** | [PDF] | [`09_svm.ipynb`](https://www.google.com/search?q=notebooks/09_svm.ipynb) |
+| **10** | **Trees & Ensembles** | [PDF] | [`10_trees_ensembles.ipynb`](https://www.google.com/search?q=notebooks/10_trees_ensembles.ipynb) |
+| **11** | **XAI & Experimentation** | [PDF] | [`11_xai_experimentation.ipynb`](https://www.google.com/search?q=notebooks/11_xai_experimentation.ipynb) |
+| **Bonus** | 🎨 Generative models (VAE) | — | [`12_bonus_generative_models_vae.ipynb`](https://www.google.com/search?q=notebooks/12_bonus_generative_models_vae.ipynb) |
 
-## Pretrained artifacts
+> *Slides are available for download on DTU Learn.*
 
-`models/` contains small pretrained weights used to keep some sessions fast to run (e.g., Lecture 7 CNN). You can retrain models using scripts under `scripts/`.
+---
 
-## License
+## 📦 Pretrained Artifacts
 
-MIT — see [`LICENSE`](LICENSE).
+The `models/` directory contains lightweight pretrained weights. This ensures that computationally heavy sessions (like **Lecture 07: CNN**) can be run interactively without long wait times during class.
+
+To retrain models from scratch, check the `scripts/` directory.
+
+---
+
+## ⚖️ License
+
+Distributed under the **MIT License**. See [`LICENSE`](https://www.google.com/search?q=LICENSE) for more information.
+
+<div align="center">
+<sub>Designed for the Applied Machine Learning Course at DTU</sub>
+</div>
+
+
+
+**Do you want me to help you create a specific `requirements.txt` based on the libraries mentioned in the lecture map (like PyTorch, Pandas, Scikit-Learn)?**
+
+```
